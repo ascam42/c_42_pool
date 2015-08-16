@@ -1,0 +1,26 @@
+void	ft_putchar(char c)
+{
+  write(1, &c, 1);
+}
+
+void	ft_print_alphabet(void)
+{
+  char	letter;
+  int	count;
+
+  letter = 'a';
+  count = 0;
+  while (count < 26)
+    {
+      ft_putchar(letter);
+      ++letter;
+      ++count;
+    }
+}
+
+int	main(int ac, char **av)
+{
+  ft_print_alphabet();
+  ft_putchar('\n');
+  return (0);
+}

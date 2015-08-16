@@ -1,0 +1,1 @@
+for VAR in `groups $USER`; do echo -n "$VAR, "; done; echo ""
